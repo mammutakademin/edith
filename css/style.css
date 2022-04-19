@@ -1,12 +1,18 @@
-*{
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+body{
 	padding: 0;
 	margin: 0;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
+	background: #f4f4f4;
 }
 .hero{
-	height: 100vh;
 	width: 100%;
+	height: 100vh;
 	background-image: url(../img/oranges.jpg);
 	background-size: cover;
 	background-position: center;
@@ -22,7 +28,8 @@ nav{
 .logo{
 	color: #638178;
 	font-size: 35px;
-	letter-spacing: 1px;
+	letter-spacing: 0.06em;
+	/* letter-spacing: 1px; */
 	cursor: pointer;
 }
 span{
@@ -64,31 +71,32 @@ h4{
 	letter-spacing: 2px;
 	font-size: 20px;
 }
-.btn{
+.cv{
+/* .btn{ */
 	display: inline-block;
-	color: #638178;
+	color: #1d090C;
 	padding: 10px 30px;
 	border: 2px solid transparent;
 	font-weight: bold;
 	outline: none;
 	border-radius: 30px;
-	background-color:#713718;
+	background-color:#ADA091;
 	box-shadow: 0px 0px 5px #858585, 0px 0px 5px #858585;
 	top: 6px;
 	right: 6px;
 	text-decoration: none;
 	transition: transform .4s; 
 }
-.btn:hover{
+.cv:hover{
+/* .btn:hover{ */
 	transform: scale(1.1);
 }
-.about{
+#about{
 	width: 100%;
 	padding: 100px 0px;
 	background-color: #ADA091;
-	/* background-color: #191919; */
 }
-.about img{
+#about img{
 	height: auto;
 	width: 430px;
 }
@@ -102,6 +110,7 @@ h4{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	filter: contrast(130%) brightness(70%);
 }
 .about-text h2{
 	color: #638178;
@@ -201,14 +210,33 @@ button:hover{
 	width: 100%;
 	height: 100vh;
 	background: #ADA091;
-	/* background: #191919; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
+.skills-wrapper {
+	display:grid;
+	grid-template-columns: 1fr 1fr; 
+	grid-column-gap: 5px;
+	font-family: 'Roboto', sans-serif;
+}
+.skills-category-name {
+	color: #fa382f;
+	font-weight: 700;
+  }
+.skills-list {
+	color:#191919;
+	list-style-type:none;
+	text-align: center;
+	margin-top: 10px;
+	padding: 0;
+}
 #skills h2{
-	
+	color: #638178;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
 }
 #skills p{
 	width: 70%;
@@ -233,23 +261,29 @@ button:hover{
 	border: 2px solid #713718;
 	cursor: pointer;
 }
-footer{
+#contact{
 	position: relative;
 	width: 100%;
-	height: 400px;
-	background: #101010;
+	height: 100vh;
+	background: #1d090C;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-footer p:nth-child(1){
+#contact h2{
+	color: #638178;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+#contact p:nth-child(1){
 	font-size: 30px;
 	color: #638178;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
-footer p:nth-child(2){
+#contact p:nth-child(2){
 	color: #638178;
 	font-size: 17px;
 	width: 500px;
