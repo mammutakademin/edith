@@ -217,13 +217,13 @@ h4 {
 }
 .skills-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   margin-top: 10px;
 }
 .skills-title {
   color: #713718;
-  /* color: #638178; */
   text-align: center;
   margin-top: 20px;
 }
@@ -280,10 +280,11 @@ h4 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  padding-top: 10px;
 }
 .contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
