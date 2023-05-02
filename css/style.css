@@ -155,10 +155,14 @@ h4 {
   text-transform: capitalize;
 }
 .box {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 200px;
+  margin-top: 10px;
 }
 .card {
   height: 35rem;
