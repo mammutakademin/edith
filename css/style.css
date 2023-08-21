@@ -287,7 +287,7 @@ h4 {
 }
 .contact {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -295,21 +295,23 @@ h4 {
   font-size: 0.8rem;
 }
 .contact img {
+  flex: 1;
   height: 20px;
   width: 20px;
   margin-right: 20px;
 }
 .contact p a {
+  flex: 1;
   color: #638178;
   font-weight: 600;
 }
-#contact p:nth-child(1) {
+.contact p a:nth-child(1) {
   font-size: 30px;
   color: #638178;
   margin-bottom: 20px;
   font-weight: bold;
 }
-#contact p:nth-child(2) {
+.contact p a:nth-child(2) {
   color: #638178;
   font-size: 17px;
   width: 500px;
